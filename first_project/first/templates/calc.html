@@ -6,6 +6,13 @@
 </head>
 <body>
     <h1>Курс "Промышленное программирование</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Главная</a></li>
+            <li><a href="{% url 'time' %}">Текущее Время</a></li>
+            <li><a href="{% url 'calc' %}">Калькулятор</a></li>
+        </ul>
+    </nav>
     <form action="" method="get">
         <input type="number" placeholder="Введите число" name="a"> <br>
         <input type="number" placeholder="Введите число" name="b"> <br>

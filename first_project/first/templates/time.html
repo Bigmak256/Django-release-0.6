@@ -6,6 +6,13 @@
 </head>
 <body>
     <h1>Курс "Промышленное программирование</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Главная</a></li>
+            <li><a href="{% url 'time' %}">Текущее Время</a></li>
+            <li><a href="{% url 'calc' %}">Калькулятор</a></li>
+        </ul>
+    </nav>
     <ul>
       <li>Текущая дата: {{ day }}.{{ month }}.{{ year }}</li>
       <li>Текущее время: {{ hours }}:{{ minutes }}:{{ seconds }}</li>
