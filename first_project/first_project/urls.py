@@ -22,6 +22,6 @@ from first import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index_page),
-    path('time/', views.time_page)
-
+    path('time/', views.time_page),
+    path('calc/', views.calc_page)
 ]
